@@ -40,7 +40,10 @@ import {useNavigate} from "react-router-dom";
 
                     <div className="col-6 d-flex justify-content-between">
 
+                    <div>
                     <h1 className="text-light text-center mt-5">მთავარი გვერდი</h1>
+                    <h2 className="text-success text-center">{window.localStorage.getItem("email")}</h2>
+                    </div>
 
                     <button type="button" className="btn btn-danger mt-5" onClick={logout}>Log Out</button>
 
@@ -54,3 +57,4 @@ import {useNavigate} from "react-router-dom";
             }
 
 export default Dashboard;
+
